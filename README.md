@@ -72,6 +72,10 @@ Single-player, arcade, minigames
 
 The game is targeted for young children, mostly in the **elementary school level**, so the experience is meant to have simple mechanics, and easy to understand ideas.
 
+![image](https://github.com/user-attachments/assets/e89c4a8a-0de4-4bff-87d4-25bb39100fe9)
+
+![image](https://github.com/user-attachments/assets/bb179f40-7d87-478f-9b04-6b9094bb4450)
+
 ## **Concept** 
 
 ### **Gameplay overview** 
