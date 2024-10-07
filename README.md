@@ -49,8 +49,6 @@ Journal Articles
 
 Online Resources
 
-##  {#heading}
-
 ## **Introduction**
 
 ### **Game Summary Pitch** {#game-summary-pitch}
