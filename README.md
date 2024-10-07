@@ -133,7 +133,7 @@ High definition, solid colors' pixel art, the aim is to not overwhelm the eyes b
 The player will move in a horizontal plane on a spaceship, from left to right, with the respective arrow key, and will be able to interact with either ‘Terminal’ or ‘Planet book’.
 Interacting with either will start a respective new loop for each gameplay element.
 
-![alt text](https://github.com/pugzzzf/NASA-Hackathon-ExoScouts/blob/master/spacemonkey/assets/backgrounds/background.jpeg)
+![image](https://github.com/user-attachments/assets/d4fe4ee7-ed2d-4ded-b870-f1c3b8a12911)
 
 In essence:
 - Player moves left to right with arrow keys
