@@ -3,7 +3,7 @@
 Design Document  
 2024 Hackathon, by team Exo Scouts
 
-[**Introduction**](#heading)	
+[**Introduction**](#Introduction)	
 
 [Game Summary](#game-summary-pitch)	
 
