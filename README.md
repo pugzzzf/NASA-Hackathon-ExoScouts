@@ -133,6 +133,8 @@ High definition, solid colors' pixel art, the aim is to not overwhelm the eyes b
 The player will move in a horizontal plane on a spaceship, from left to right, with the respective arrow key, and will be able to interact with either ‘Terminal’ or ‘Planet book’.
 Interacting with either will start a respective new loop for each gameplay element.
 
+![alt text](https://github.com/pugzzzf/NASA-Hackathon-ExoScouts/blob/master/spacemonkey/assets/backgrounds/background.jpeg)
+
 In essence:
 - Player moves left to right with arrow keys
 - When near an interactable object, render a ‘Interact to Open’ prompt
@@ -154,8 +156,8 @@ In essence:
 - Render “back” button, to go back to [Lobby Loop].
 - Initialize choice of star variable to switch on [Star Discover Loop]
 - Star map loop ends and starts [Star Discover Loop]
-
-![alt text](https://github.com/pugzzzf/NASA-Hackathon-ExoScouts/blob/master/spacemonkey/assets/backgrounds/background.jpeg)
+- 
+![image](https://github.com/pugzzzf/NASA-Hackathon-ExoScouts/blob/master/spacemonkey/assets/backgrounds/terminal.png)
 
 **2nd scene, Star Discover Loop**
 
