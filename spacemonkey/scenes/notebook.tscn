@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://qbu3d4ins26p"]
+
+[ext_resource type="Texture2D" uid="uid://cg1ifrqvdeqxo" path="res://assets/backgrounds/bookcase.png" id="1_7vu3m"]
+[ext_resource type="PackedScene" uid="uid://f43256qbmjed" path="res://interaction/interactionarea/interaction_area.tscn" id="2_n8jru"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3irnr"]
+radius = 142.032
+
+[node name="notebook" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_7vu3m")
+
+[node name="InteractionArea" parent="." instance=ExtResource("2_n8jru")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+shape = SubResource("CircleShape2D_3irnr")

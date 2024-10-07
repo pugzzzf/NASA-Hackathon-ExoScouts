@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://dfx3xpf6wb248"]
+
+[ext_resource type="Script" path="res://scripts/terminal.gd" id="1_nejq7"]
+[ext_resource type="PackedScene" uid="uid://f43256qbmjed" path="res://interaction/interactionarea/interaction_area.tscn" id="2_ks3ij"]
+[ext_resource type="Texture2D" uid="uid://cf04afmhi23le" path="res://assets/backgrounds/terminalchair.png" id="2_tthte"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pyg68"]
+size = Vector2(350, 500)
+
+[node name="terminal" type="StaticBody2D"]
+script = ExtResource("1_nejq7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_tthte")
+
+[node name="InteractionArea" parent="." instance=ExtResource("2_ks3ij")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+shape = SubResource("RectangleShape2D_pyg68")

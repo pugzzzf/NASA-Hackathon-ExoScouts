@@ -1,0 +1,122 @@
+[gd_scene load_steps=20 format=3 uid="uid://m4l1lay5a6d7"]
+
+[ext_resource type="Texture2D" uid="uid://dx2q3q0kfbf5w" path="res://assets/backgrounds/shipfinal.png" id="1_8uk2v"]
+[ext_resource type="Script" path="res://scripts/spaceship.gd" id="1_kh4r0"]
+[ext_resource type="PackedScene" uid="uid://qbu3d4ins26p" path="res://scenes/notebook.tscn" id="2_lcqd1"]
+[ext_resource type="PackedScene" uid="uid://dfx3xpf6wb248" path="res://scenes/terminal.tscn" id="3_d4k48"]
+[ext_resource type="PackedScene" uid="uid://bdsgkcd833fud" path="res://scenes/character.tscn" id="4_rl2nl"]
+[ext_resource type="PackedScene" uid="uid://c5jo88oy2jwve" path="res://scenes/wall.tscn" id="5_fd1p5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j8477"]
+atlas = ExtResource("1_8uk2v")
+region = Rect2(0, 0, 1500, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0iuag"]
+atlas = ExtResource("1_8uk2v")
+region = Rect2(1500, 0, 1500, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pgqxj"]
+atlas = ExtResource("1_8uk2v")
+region = Rect2(3000, 0, 1500, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p5l3w"]
+atlas = ExtResource("1_8uk2v")
+region = Rect2(4500, 0, 1500, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u51b2"]
+atlas = ExtResource("1_8uk2v")
+region = Rect2(6000, 0, 1500, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f2hde"]
+atlas = ExtResource("1_8uk2v")
+region = Rect2(7500, 0, 1500, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_28wio"]
+atlas = ExtResource("1_8uk2v")
+region = Rect2(9000, 0, 1500, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_omxlg"]
+atlas = ExtResource("1_8uk2v")
+region = Rect2(10500, 0, 1500, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bcsd8"]
+atlas = ExtResource("1_8uk2v")
+region = Rect2(12000, 0, 1500, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dgqvh"]
+atlas = ExtResource("1_8uk2v")
+region = Rect2(13500, 0, 1500, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ocpqp"]
+atlas = ExtResource("1_8uk2v")
+region = Rect2(15000, 0, 1500, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lxfsg"]
+atlas = ExtResource("1_8uk2v")
+region = Rect2(16500, 0, 1500, 800)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3ysof"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j8477")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0iuag")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pgqxj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p5l3w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u51b2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f2hde")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_28wio")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_omxlg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bcsd8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dgqvh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ocpqp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lxfsg")
+}],
+"loop": true,
+"name": &"ship",
+"speed": 5.0
+}]
+
+[node name="spaceship" type="Node2D"]
+script = ExtResource("1_kh4r0")
+
+[node name="AnimatedBackground" type="AnimatedSprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(0.768, 0.81)
+sprite_frames = SubResource("SpriteFrames_3ysof")
+animation = &"ship"
+speed_scale = 1.5
+
+[node name="notebook" parent="." instance=ExtResource("2_lcqd1")]
+position = Vector2(161, 469)
+
+[node name="terminal" parent="." instance=ExtResource("3_d4k48")]
+position = Vector2(999, 527)
+
+[node name="Character" parent="." instance=ExtResource("4_rl2nl")]
+position = Vector2(430, 508)
+
+[node name="wall" parent="." instance=ExtResource("5_fd1p5")]
+position = Vector2(490, 430)
