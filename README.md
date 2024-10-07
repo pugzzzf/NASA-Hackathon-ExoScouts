@@ -126,7 +126,7 @@ High definition, solid colors' pixel art, the aim is to not overwhelm the eyes b
 
 ## **Development Timeline**  
 ### **Main Loop**  
-**Lobby**
+#### **Lobby**
 
 The player will move in a horizontal plane on a spaceship, from left to right, with the respective arrow key, and will be able to interact with either ‘Terminal’ or ‘Planet book’.
 Interacting with either will start a respective new loop for each gameplay element.
@@ -139,7 +139,7 @@ In essence:
 - When near lobby door, render prompt to exit game
 - When pressing a key near door, exit game
 
-**Terminal Loop**
+#### **Terminal Loop**
 
 **1st Scene, Star map**
 
@@ -154,6 +154,7 @@ In essence:
 - Star map loop ends and starts [Star Discover Loop]
 
 **2nd scene, Star Discover Loop**
+
 The terminal scene will change to the star and a prompt “Press D to detect new planets” where a minigame consisting of an oscillating up and down line in a vertical rectangle asks you to press space bar when the line is in the center of the rectangle.
 On planet discover, the scene takes you to a plane where the planet (a dot) circles around the star, and a minigame starts.
 
@@ -165,6 +166,7 @@ In essence:
 - On minigame success, start [Planet Discover] scene
 
 **3rd Scene, Planet Discover scene**
+
 The terminal scene will change to the star and an oscillating dot (the planet) where the player will have to press space bar when the dot is completely in the center of the star.
 On minigame success, show “You discovered a planet! Check your notes” prompt on screen.
 
@@ -179,7 +181,8 @@ In essence:
 - When system is complete, go back to terminal
 - Mark star system as complete on terminal
 
-**Planet Book Loop**
+#### **Planet Book Loop**
+
 Planet Book, on interact.
 When interacted by the player, open the Planet Book, the planet book consists of a cover, a summary of contents, general information, and finally information about each discovered planet.
 The book will be opened on the cover and the summary of contents.
@@ -284,5 +287,3 @@ https://eyes.nasa.gov/apps/exo/\#/system/GJ\_1132
 Exoplanets \- NASA Science. (2023, June 7). Nasa.gov.
 
 https://science.nasa.gov/exoplanets/
-
-
