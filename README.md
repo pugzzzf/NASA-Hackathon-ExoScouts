@@ -1,51 +1,53 @@
-#  Space Monkey
+# Space Monkey
 
-# DESIGN DOCUMENT
+Design Document  
+2024 Hackathon, by team Exo Scouts
 
-2024 Hackathon, by team Exo Scouts  
----
+[**Introduction**](#heading)	
 
-[**Introduction**](#heading)	**[2](#heading)**
+[Game Summary](#game-summary-pitch)	
 
-[Game Summary](#game-summary-pitch)	[2](#game-summary-pitch)
+[Player Experience](#player-experience)
 
-[Player Experience](#player-experience)	[2](#player-experience)
+[Development Software](#development-software)	
 
-[Development Software](#development-software)	[3](#development-software)
+[Genre](#genre)	
 
-[Genre](#genre)	[3](#genre)
+[Target Audience](#target-audience)	
 
-[Target Audience](#target-audience)	[3](#target-audience)
+[**Concept**](#concept)	
 
-[**Concept**](#concept)	**[3](#concept)**
+[Gameplay overview](#gameplay-overview)	
 
-[Gameplay overview](#gameplay-overview)	[3](#gameplay-overview)
+[Theme Interpretatio](#theme-interpretation-\(the-discovery-of-exoplanets\))n (Discovery of Exoplanets)         	
 
-[Theme Interpretatio](#theme-interpretation-\(the-discovery-of-exoplanets\))n (Discovery of Exoplanets)         	3
+[Primary Mechanics](https://docs.google.com/document/d/1J5i4xsYPA68tg5GUW3fNO0dxXLoNTGQLEdolEjADlFY/edit#heading=h.jcjh7x82c5yt)	
 
-[Primary Mechanics](#heading=h.jcjh7x82c5yt)	[4](#heading=h.jcjh7x82c5yt)
+[**Art**](#art)	
 
-[**Art**](#art)	**[6](#art)**
+[Theme Interpretation](https://docs.google.com/document/d/1J5i4xsYPA68tg5GUW3fNO0dxXLoNTGQLEdolEjADlFY/edit#heading=h.d6rhu12civ1h)	
 
-[Theme Interpretation](#heading=h.d6rhu12civ1h)	[6](#heading=h.d6rhu12civ1h)
+[Design](#design)	
 
-[Design](#design)	[6](#design)
+[**Audio**](#audio)	
 
-[**Audio**](#audio)	**6**
+[Music](#music)	
 
-[Music](#music)	6
+[Sound Effects](#sound-effects)	
 
-[Sound Effects](#sound-effects)	6
+[**Game Experience**](#game-experience)	
 
-[**Game Experience**](#game-experience)	**7**
+[UI](#ui)	
 
-[UI](#ui)	7
+[Controls](#controls)	
 
-[Controls](#controls)	7
+**Development Timeline**	
 
-**Development Timeline	8**
+**Links, References and Tools**	
 
-	
+Journal Articles
+
+Online Resources
 
 ##  {#heading}
 
@@ -87,10 +89,10 @@ The game’s minigame for discovering new planets is meant to mirror the real li
 
 | Mechanic | Animated Mockup  *(Art not necessarily final)* |
 | ----- | ----- |
-|         **Lobby**       a The player will stay in the spaceship lobby, and here he can interact with the terminal | ![][image1] |
-|         **Star Map**       a The player will see this screen once interacted with the terminal; the player will click any star system. | ![][image2] |
-|      **Planet Detection** The player will zoom in to the selected star and press a key to “detect” (render next scene) new planets | ![][image3] |
-|   **Planet Discover** a The Planet Discover scene will trigger a minigame of the zoomed in star and the orbiting planet, and the player has to press Space when the orbiting planet is dead center on the star. After that, the next scene would be a close up of the planet, and a prompt saying to check your planet book. | ![][image4] |
+| **Lobby**        The player will stay in the spaceship lobby, and here he can interact with the terminal | ![][image1] |
+| **Star Map** The player will see this screen once interacted with the terminal; the player will click any star system. | ![][image2] |
+| **Planet Detection** The player will zoom in to the selected star and press a key to “detect” (render next scene) new planets | ![][image3] |
+| **Planet Discover**  The Planet Discover scene will trigger a minigame of the zoomed in star and the orbiting planet, and the player has to press Space when the orbiting planet is dead center on the star. After that, the next scene would be a close up of the planet, and a prompt saying to check your planet book. | ![][image4] |
 | **Planet Book** The planet book will show the discovered planets, general information, a detailed picture drawn by Space Monkey, and a fun fact.  Undiscovered planets would not appear as entries | ![][image5] |
 
 	
@@ -200,6 +202,98 @@ The sound effects would be simple notes on minigame success and fails, and on bu
 - **The \[Planet Book\] will have a ‘dictionary’, where all boolean variables reside; each planet holds a boolean that changes from false to true on Planet Discover.**  
 - **The book will render images for each page**  
 - **The planets’ information will be a drawing of the planet, and general characteristics.**
+
+**Links, References and Tools**
+
+**Journal Articles**
+
+1\. Batalha, N. M., et al. (2013). Kepler's planet-detection mission: Progress in
+
+the first three years. The Astrophysical Journal, 172(3), 217\.
+
+2\. Bonfils, X., et al. (2015). An Earth-sized planet with a dense atmosphere
+
+around GJ 1132\. Nature, 529(7585), 75-78.
+
+3\. Callanan, P. J., et al. (2007). The discovery of the planetary companion to 55
+
+Cancri f. Astronomy & Astrophysics, 467(2), 1007-1015.
+
+4\. Cloutier, R., et al. (2020). The mass and radius of GJ 1132 c: A super-Earth.
+
+Astronomy & Astrophysics, 644, A118.
+
+5\. Doyle, L. R., Fabrycky, D. C., Carter, J. A., Ghosh, S., & Pineda, J. (2011).
+
+Kepler-16: A transiting circumbinary planet. Science, 333(6049), 1602-1606.
+
+6\. Demory, B.-O., et al. (2014). Kepler-186 e: A second Earth in the habitable
+
+zone. The Astrophysical Journal, 789(1), 12\.
+
+7\. Fischer, D. A., Valenti, J., & Howard, A. W. (2002). The 55 Cancri system: A
+
+multi-planet system. The Astrophysical Journal, 570(1), 423-434.
+
+8\. Guillot, T., & Showman, A. P. (2002). Evolution of “51 Pegasus b-like”
+
+planets. Astronomy and Astrophysics, 385(1), 156–165.
+
+https://doi.org/10.1051/0004-6361:20011624
+
+9\. Mayor, M., & Queloz, D. (1995). A Jupiter-mass companion to a solar-type
+
+star. Nature, 378(6555), 355-359.
+
+10\. McArthur, B. E., Benedict, G. F., & Nelan, E. P. (2004). The 55 Cancri
+
+system: A multi-planet system. The Astrophysical Journal, 614(1), L81-L84.
+
+11\. Muirhead, P. S., et al. (2015). Characterizing the Kepler-186 system: A
+
+multispecies planetary system. The Astrophysical Journal, 801(1), 12\.
+
+12\. Quintana, E. V., et al. (2014). An Earth-sized planet in the habitable zone of
+
+a cool star. Science, 344(6181), 277-280.
+
+13\. Winn, J. N., et al. (2014). The hot super-Earth 55 Cancri e. The
+
+Astrophysical Journal, 787(2), 85\.
+
+14\. Wu, Y., et al. (2015). Characteristics of the Kepler-186 f planet. The
+
+Astrophysical Journal, 810(1), 12\.
+
+**Online Resources**
+
+Eyes on Exoplanets \- NASA/JPL. (2024). Nasa.gov.
+
+https://eyes.nasa.gov/apps/exo/\#/
+
+Eyes on Exoplanets \- NASA/JPL. (2024). Nasa.gov.
+
+https://eyes.nasa.gov/apps/exo/\#/system/Kepler-16
+
+Eyes on Exoplanets \- NASA/JPL. (2024). Nasa.gov.
+
+https://eyes.nasa.gov/apps/exo/\#/system/55\_Cnc
+
+Eyes on Exoplanets \- NASA/JPL. (2024). Nasa.gov.
+
+https://eyes.nasa.gov/apps/exo/\#/system/Kepler-186
+
+Eyes on Exoplanets \- NASA/JPL. (2024). Nasa.gov.
+
+https://eyes.nasa.gov/apps/exo/\#/system/51\_Peg
+
+Eyes on Exoplanets \- NASA/JPL. (2024). Nasa.gov.
+
+https://eyes.nasa.gov/apps/exo/\#/system/GJ\_1132
+
+Exoplanets \- NASA Science. (2023, June 7). Nasa.gov.
+
+https://science.nasa.gov/exoplanets/
 
 [image1]: <data:image/png;base64,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>
 
