@@ -19,7 +19,7 @@ Design Document
 
 [Gameplay overview](#gameplay-overview)	
 
-[Theme Interpretation](#theme-interpretation-\(the-discovery-of-exoplanets\)) (Discovery of Exoplanets)         	
+[Theme Interpretation](#theme-interpretation) (Discovery of Exoplanets)         	
 
 [Primary Mechanics]()	
 
@@ -79,7 +79,8 @@ The game is targeted for young children, mostly in the **elementary school level
 The player controls a monkey in its spaceship, where he can interact with a Terminal, or a Planet Book; the Terminal allows the monkey to explore star systems, detect new planets and uncover them, and finally registering said data in its Planet Book.  
 The Planet Book functions as a progress gauge for the player, as well as the main source of information on these exoplanets, as once they are discovered by the monkey all the relevant data is put into the Planet Book.
 
-### **Theme Interpretation (The discovery of Exoplanets)** 
+### **Theme Interpretation**
+#### The discovery of Exoplanets
 
 The game’s minigame for discovering new planets is meant to mirror the real life way of discovering new exoplanets, where scientists notice spots in the selected star and check if the spots are created by the star’s light casting a shadow due to the space the exoplanet occupies.
 
