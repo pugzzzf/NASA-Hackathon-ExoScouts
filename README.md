@@ -19,7 +19,7 @@ Design Document
 
 [Gameplay overview](#gameplay-overview)	
 
-[Theme Interpretation](###theme-interpretation-\(the-discovery-of-exoplanets\)) (Discovery of Exoplanets)         	
+[Theme Interpretation](#theme-interpretation-\(the-discovery-of-exoplanets\)) (Discovery of Exoplanets)         	
 
 [Primary Mechanics]()	
 
