@@ -39,9 +39,9 @@ Design Document
 
 - [Controls](#controls)	
 
-[**Development Timeline**](development-timeline)
+[**Development Timeline**](#development-timeline)
 
-[**Links, References and Tools**](links-references-tools)
+[**Links, References and Tools**](#links-references-and-tools)
 
 - [Journal Articles](#journal-articles)
 
@@ -193,9 +193,9 @@ In essence:
 - The book will render images for each page
 - The planets’ information will be a drawing of the planet, and general characteristics.
 
-**Links, References and Tools**
+## **Links, References and Tools**
 
-**Journal Articles**
+### **Journal Articles**
 
 1\. Batalha, N. M., et al. (2013). Kepler's planet-detection mission: Progress in
 
@@ -255,7 +255,7 @@ Astrophysical Journal, 787(2), 85\.
 
 Astrophysical Journal, 810(1), 12\.
 
-**Online Resources**
+### **Online Resources**
 
 Eyes on Exoplanets \- NASA/JPL. (2024). Nasa.gov.
 
