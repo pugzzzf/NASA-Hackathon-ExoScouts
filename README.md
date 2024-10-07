@@ -155,6 +155,8 @@ In essence:
 - Initialize choice of star variable to switch on [Star Discover Loop]
 - Star map loop ends and starts [Star Discover Loop]
 
+![alt text](https://github.com/pugzzzf/NASA-Hackathon-ExoScouts/blob/master/spacemonkey/assets/backgrounds/background.jpeg)
+
 **2nd scene, Star Discover Loop**
 
 The terminal scene will change to the star and a prompt “Press D to detect new planets” where a minigame consisting of an oscillating up and down line in a vertical rectangle asks you to press space bar when the line is in the center of the rectangle.
