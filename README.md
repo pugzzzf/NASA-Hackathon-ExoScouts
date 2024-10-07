@@ -5,49 +5,47 @@ Design Document
 
 [**Introduction**](#Introduction)	
 
-[Game Summary](#game-summary-pitch)	
+- [Game Summary](#game-summary-pitch)	
 
-[Player Experience](#player-experience)
+- [Player Experience](#player-experience)
 
-[Development Software](#development-software)	
+- [Development Software](#development-software)	
 
-[Genre](#genre)	
+- [Genre](#genre)	
 
-[Target Audience](#target-audience)	
+- [Target Audience](#target-audience)	
 
 [**Concept**](#concept)	
 
-[Gameplay overview](#gameplay-overview)	
+- [Gameplay overview](#gameplay-overview)	
 
-[Theme Interpretation](#theme-interpretation) (Discovery of Exoplanets)         	
+- [Theme Interpretation](#theme-interpretation) (Discovery of Exoplanets)         	
 
-[Primary Mechanics]()	
+- [Primary Mechanics](#primary-mechanics)	
 
 [**Art**](#art)	
 
-[Theme Interpretation]()	
-
-[Design](#design)	
+- [Design](#design)	
 
 [**Audio**](#audio)	
 
-[Music](#music)	
+- [Music](#music)	
 
-[Sound Effects](#sound-effects)	
+- [Sound Effects](#sound-effects)	
 
 [**Game Experience**](#game-experience)	
 
-[UI](#ui)	
+- [UI](#ui)	
 
-[Controls](#controls)	
+- [Controls](#controls)	
 
 [**Development Timeline**](development-timeline)
 
 [**Links, References and Tools**](links-references-tools)
 
-[Journal Articles](#journal-articles)
+- [Journal Articles](#journal-articles)
 
-[Online Resources](#online-resources)
+- [Online Resources](#online-resources)
 
 ## **Introduction**
 
