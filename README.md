@@ -157,7 +157,7 @@ In essence:
 - Initialize choice of star variable to switch on [Star Discover Loop]
 - Star map loop ends and starts [Star Discover Loop]
 - 
-![image](https://github.com/pugzzzf/NASA-Hackathon-ExoScouts/blob/master/spacemonkey/assets/backgrounds/terminal.png)
+![image](https://github.com/user-attachments/assets/9f1391ba-26ee-43f9-8908-a92b227853b6)
 
 **2nd scene, Star Discover Loop**
 
