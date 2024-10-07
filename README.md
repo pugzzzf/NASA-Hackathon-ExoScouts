@@ -1,5 +1,7 @@
 # Space Monkey
 
+![alt text](https://github.com/pugzzzf/NASA-Hackathon-ExoScouts/blob/master/spacemonkey/assets/ui/menu.png)
+
 Design Document  
 2024 Hackathon, by team Exo Scouts
 
