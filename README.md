@@ -87,15 +87,15 @@ The game’s minigame for discovering new planets is meant to mirror the real li
 
 **Here's a sneak peek at a few planets you will explore!**
 ![BITACORA 55 CANCRI F](https://github.com/user-attachments/assets/d2385572-afbf-4ce7-a921-81f2bed3de67)
-**Here we can see the information provided by NASA reflected in our videogame, in a lighthearted, understandable and digestible way, in order to empower the young students' learning process during this phase.
+**Here we can see the information provided by NASA reflected in our videogame, in a lighthearted, understandable and digestible way, in order to empower the young students' learning process during this phase.**
 
-The planet 55 Cancri F information was taken from: [https://eyes.nasa.gov/apps/exo/#/system/55_Cnc](https://eyes.nasa.gov/apps/exo/#/system/55_Cnc)**
+**The planet 55 Cancri F information was taken from: [https://eyes.nasa.gov/apps/exo/#/system/55_Cnc](https://eyes.nasa.gov/apps/exo/#/system/55_Cnc)**
 
 ![BITACORA KEPLER 16B](https://github.com/user-attachments/assets/e6c10aa5-d0cb-424f-83f2-5843da3dfc55)
 **Now we have the planet Kepler 16B, every entry provides general information about the planet, like the type of Exoplanet, habitable zone or not, a fun fact for the young students, etc. 
-The combination of the bright sprite drawing and the child-like entry writing makes this more appealing and/or relatable to young students.
+The combination of the bright sprite drawing and the child-like entry writing makes this more appealing and/or relatable to young students.**
 
-This information of Kepler 16B was taken from: [https://eyes.nasa.gov/apps/exo/#/system/Kepler-16](https://eyes.nasa.gov/apps/exo/#/system/Kepler-16)**
+**This information of Kepler 16B was taken from: [https://eyes.nasa.gov/apps/exo/#/system/Kepler-16](https://eyes.nasa.gov/apps/exo/#/system/Kepler-16)**
 
 
 
