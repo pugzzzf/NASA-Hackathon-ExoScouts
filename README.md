@@ -53,6 +53,7 @@ Design Document
 ### **Game Summary Pitch**
 
 Space Monkey is a short, arcade video game where the player controls a spacefaring monkey on his spaceship, trying to uncover new Exoplanets via minigames.
+
 ![ezgif-7-cdd4bc8217](https://github.com/user-attachments/assets/a8f71056-c876-441d-a2f2-0a70dc36ca47)
 
 
