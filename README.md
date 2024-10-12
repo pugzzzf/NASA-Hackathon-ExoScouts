@@ -1,9 +1,8 @@
 # Space Monkey
 
-![alt text](https://github.com/pugzzzf/NASA-Hackathon-ExoScouts/blob/master/spacemonkey/assets/ui/menu.png)
-
+![image](https://github.com/pugzzzf/NASA-Hackathon-ExoScouts/blob/master/spacemonkey/assets/ui/menu.png)
 Design Document  
-2024 Hackathon, by team Exo Scouts
+2024 NASA Space Apps Hackathon, with <3 by team Exo Scouts
 
 [**Introduction**](#Introduction)	
 
@@ -21,9 +20,9 @@ Design Document
 
 - [Gameplay overview](#gameplay-overview)	
 
-- [Theme Interpretation](#theme-interpretation) (Discovery of Exoplanets)         	
+- **[Theme Interpretation](#theme-interpretation) (Discovery of Exoplanets)**         	
 
-- [Primary Mechanics](#primary-mechanics)	
+- **[Primary Mechanics](#primary-mechanics)**
 
 [**Art**](#art)	
 
@@ -49,11 +48,13 @@ Design Document
 
 - [Online Resources](#online-resources)
 
-## **Introduction**
+# **Introduction**
 
 ### **Game Summary Pitch**
 
 Space Monkey is a short, arcade video game where the player controls a space faring monkey on his spaceship, trying to uncover new Exoplanets via minigames.
+![ezgif-7-cdd4bc8217](https://github.com/user-attachments/assets/a8f71056-c876-441d-a2f2-0a70dc36ca47)
+
 
 ### **Player Experience** 
 
@@ -72,11 +73,7 @@ Single-player, arcade, minigames
 
 The game is targeted for young children, mostly in the **elementary school level**, so the experience is meant to have simple mechanics, and easy to understand ideas.
 
-![image](https://github.com/user-attachments/assets/e89c4a8a-0de4-4bff-87d4-25bb39100fe9)
-
-![image](https://github.com/user-attachments/assets/bb179f40-7d87-478f-9b04-6b9094bb4450)
-
-## **Concept** 
+# **Concept** 
 
 ### **Gameplay overview** 
 
@@ -88,15 +85,27 @@ The Planet Book functions as a progress gauge for the player, as well as the mai
 
 The game’s minigame for discovering new planets is meant to mirror the real life way of discovering new exoplanets, where scientists notice spots in the selected star and check if the spots are created by the star’s light casting a shadow due to the space the exoplanet occupies.
 
-### **Primary Mechanics**
+**Here's a sneak peek at a few planets you will explore!**
+![BITACORA 55 CANCRI F](https://github.com/user-attachments/assets/d2385572-afbf-4ce7-a921-81f2bed3de67)
+**Here we can see the information provided by NASA reflected in our videogame, in a lighthearted, understandable and digestible way, in order to empower the young students' learning process during this phase.
+The planet 55 Cancri F information was taken from: [https://eyes.nasa.gov/apps/exo/#/system/55_Cnc](https://eyes.nasa.gov/apps/exo/#/system/55_Cnc)**
+
+![BITACORA KEPLER 16B](https://github.com/user-attachments/assets/e6c10aa5-d0cb-424f-83f2-5843da3dfc55)
+**Now we have the planet Kepler 16B, every entry provides general information about the planet, like the type of Exoplanet, habitable zone or not, a fun fact for the young students, etc. 
+The combination of the bright sprite drawing and the child-like entry writing makes this more appealing and/or relatable to young students.
+This information of Kepler 16B was taken from: [https://eyes.nasa.gov/apps/exo/#/system/Kepler-16](https://eyes.nasa.gov/apps/exo/#/system/Kepler-16)**
+
+
+
+## **Primary Mechanics**
 
 **Lobby**  
 The player will stay in the spaceship lobby, and here he can interact with the terminal  
-**Star Map**  
+- **Star Map**  
 The player will see this screen once interacted with the terminal; the player will click any star system.  
-**Planet Detection**  
+- **Planet Detection**  
 The player will zoom in to the selected star and press a key to “detect” (render next scene) new planets  
-**Planet Discover**   
+- **Planet Discover**   
 The Planet Discover scene will trigger a minigame of the zoomed in star and the orbiting planet, and the player has to press Space when the orbiting planet is dead center on the star.  
 After that, the next scene would be a close up of the planet, and a prompt saying to check your planet book.
 
@@ -104,13 +113,15 @@ After that, the next scene would be a close up of the planet, and a prompt sayin
 The planet book will show the discovered planets, general information, a detailed picture drawn by Space Monkey, and a fun fact.   
 Undiscovered planets would not appear as entries
 
-## **Art**
+# **Art**
 
 ### **Design** 
 
 Minimalistic, simple and vibrant pixel art, we want a clean look with proper contrast to bring out the characteristics of each planet, as well as being attractive to our young players that would be playing Space Monkey.
 
-## **Audio**
+![ezgif-7-0d784bc8a0](https://github.com/user-attachments/assets/555b4b4d-52d4-4d7d-bb3d-bbc784ff2fb5)
+
+# **Audio**
 
 ### **Music**
 
@@ -120,24 +131,23 @@ The music would be lo-fi, bright notes so to evoke the mystifying feeling of spa
 
 The sound effects would be simple notes on minigame success and fails, and on button presses, with the intention to fortify the feeling of immersion and grant some feedback on user input.
 
-## **Game Experience** 
+# **Game Experience** 
 
-### **UI**
+### **UI** 
 High definition, solid colors' pixel art, the aim is to not overwhelm the eyes but put emphasis exactly where we want it, for example, the planets, the stars, etc.
 
 ### **Controls** 
-
 **Keyboard**  
-	Mouse, space bar, arrow keys, E key.
+- Mouse, space bar, arrow keys, E key.
 
-## **Development Timeline**  
-### **Main Loop**  
-#### **Lobby**
+# **Development Timeline**  
+## **Main Loop**  
+### **Lobby**
 
 The player will move in a horizontal plane on a spaceship, from left to right, with the respective arrow key, and will be able to interact with either ‘Terminal’ or ‘Planet book’.
 Interacting with either will start a respective new loop for each gameplay element.
 
-![image](https://github.com/user-attachments/assets/d4fe4ee7-ed2d-4ded-b870-f1c3b8a12911)
+![image](https://github.com/user-attachments/assets/71ec93ca-cda5-48fa-b561-8471b320ce0c)
 
 In essence:
 - Player moves left to right with arrow keys
@@ -147,7 +157,7 @@ In essence:
 - When near lobby door, render prompt to exit game
 - When pressing a key near door, exit game
 
-#### **Terminal Loop**
+## **Terminal Loop**
 
 **1st Scene, Star map**
 
@@ -160,20 +170,19 @@ In essence:
 - Render “back” button, to go back to [Lobby Loop].
 - Initialize choice of star variable to switch on [Star Discover Loop]
 - Star map loop ends and starts [Star Discover Loop]
-- 
+
 ![image](https://github.com/user-attachments/assets/9f1391ba-26ee-43f9-8908-a92b227853b6)
 
 **2nd scene, Star Discover Loop**
 
-The terminal scene will change to the star and a prompt “Press D to detect new planets” where a minigame consisting of an oscillating up and down line in a vertical rectangle asks you to press space bar when the line is in the center of the rectangle.
-On planet discover, the scene takes you to a plane where the planet (a dot) circles around the star, and a minigame starts.
+The terminal scene will change to the star and a prompt “Press Space to detect new planets” to go to the next scene.
+On planet scan, the scene takes you to a plane where the planet (a dot) circles around the star, and a minigame starts.
 
 In essence:
 - Use choice of planet variable
-- Render star, star name, and detect new planets prompt
-- On D key press, start [Star Discover Minigame]
-- Star Discover Minigame: A line oscillating up and down on a vertical rectangle; the player must press space bar when the line is in the center of the rectangle
-- On minigame success, start [Planet Discover] scene
+- Render star, star name, and scan new planets prompt
+- On Space key press, start [Planet Discover scene]
+![](https://cdn.discordapp.com/attachments/265654195816890377/1294758097818095729/image.png?ex=670c2cf1&is=670adb71&hm=a42dd8fdceb8370ca9034fa61d69b69158921585f2f54576526fe21b41abc9a4&)
 
 **3rd Scene, Planet Discover scene**
 
@@ -191,7 +200,9 @@ In essence:
 - When system is complete, go back to terminal
 - Mark star system as complete on terminal
 
-#### **Planet Book Loop**
+![image](https://github.com/user-attachments/assets/dc9ee048-4413-4251-8e83-832cba2c9852)
+
+## **Planet Book Loop**
 
 Planet Book, on interact.
 When interacted by the player, open the Planet Book, the planet book consists of a cover, a summary of contents, general information, and finally information about each discovered planet.
@@ -205,6 +216,7 @@ In essence:
 - The [Planet Book] will have a ‘dictionary’, where all boolean variables reside; each planet holds a boolean that - changes from false to true on Planet Discover.
 - The book will render images for each page
 - The planets’ information will be a drawing of the planet, and general characteristics.
+![BITACORA 55 CANCRI D](https://github.com/user-attachments/assets/4d8d8d40-fa27-460f-945e-5bec9621ac3f)
 
 ## **Links, References and Tools**
 
@@ -297,3 +309,4 @@ https://eyes.nasa.gov/apps/exo/\#/system/GJ\_1132
 Exoplanets \- NASA Science. (2023, June 7). Nasa.gov.
 
 https://science.nasa.gov/exoplanets/
+
