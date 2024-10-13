@@ -2,6 +2,7 @@
 
 ![image](https://github.com/pugzzzf/NASA-Hackathon-ExoScouts/blob/master/spacemonkey/assets/ui/menu.png)
 Design Document
+
 2024 NASA Space Apps Hackathon, with <3 by team Exo Scouts
 
 [**Introduction**](#Introduction)
