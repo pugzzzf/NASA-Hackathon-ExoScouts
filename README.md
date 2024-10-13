@@ -1,6 +1,7 @@
 # Space Monkey
 
 ![image](https://github.com/pugzzzf/NASA-Hackathon-ExoScouts/blob/master/src/assets/ui/menu.png?raw=true)
+
 Design Document
 
 2024 NASA Space Apps Hackathon, with <3 by team Exo Scouts
