@@ -1,0 +1,313 @@
+[gd_scene load_steps=14 format=3 uid="uid://du4nuhhygrtk2"]
+
+[ext_resource type="Texture2D" uid="uid://dq5v5a7cosn5" path="res://assets/stars/kepler16.png" id="1_bmfm4"]
+[ext_resource type="Script" path="res://scripts/starbuttons.gd" id="1_x7t20"]
+[ext_resource type="Texture2D" uid="uid://8vbx1pq87lls" path="res://assets/stars/Copernicus.png" id="2_y4nuk"]
+[ext_resource type="FontFile" uid="uid://dcybpwnq6n3em" path="res://assets/ui/font/Minecraft.ttf" id="3_ncady"]
+[ext_resource type="Shader" path="res://scenes/gray.gdshader" id="5_rrq3v"]
+[ext_resource type="Texture2D" uid="uid://7qh0p6wafflr" path="res://assets/stars/Pegasi.png" id="6_gkqux"]
+[ext_resource type="Texture2D" uid="uid://be58mncul3eqr" path="res://assets/stars/Kepler 186e.png" id="7_pp3fr"]
+[ext_resource type="Texture2D" uid="uid://chsgt5m5or42u" path="res://assets/stars/GJ 1132.png" id="8_lrfbw"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_130n0"]
+shader = ExtResource("5_rrq3v")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_eq0bf"]
+shader = ExtResource("5_rrq3v")
+
+[sub_resource type="Animation" id="Animation_20o2l"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("kepler16:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(94, 60)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("copernicus:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(350, 330)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("pegasi:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(545, 150)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("kepler186e:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(655, 350)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("gj:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(823, 130)]
+}
+
+[sub_resource type="Animation" id="Animation_qabp2"]
+resource_name = "idle"
+length = 2.0
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("kepler16:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Vector2(47, 40), Vector2(47, 50)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("copernicus:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Vector2(364, 375), Vector2(364, 385)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("pegasi:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Vector2(545, 150), Vector2(545, 160)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("kepler186e:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Vector2(655, 350), Vector2(655, 360)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("gj:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Vector2(823, 130), Vector2(823, 140)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_d7bua"]
+_data = {
+"RESET": SubResource("Animation_20o2l"),
+"idle": SubResource("Animation_qabp2")
+}
+
+[node name="StaticBody2D" type="StaticBody2D"]
+script = ExtResource("1_x7t20")
+
+[node name="kepler16" type="TextureButton" parent="."]
+offset_left = 47.0
+offset_top = 50.0
+offset_right = 647.0
+offset_bottom = 650.0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("1_bmfm4")
+
+[node name="keplerlabel" type="Label" parent="kepler16"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -56.0
+offset_top = 422.0
+offset_right = 15.0
+offset_bottom = 445.0
+grow_horizontal = 2
+scale = Vector2(2, 2)
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.497474, 0.497474, 0.497474, 1)
+theme_override_fonts/font = ExtResource("3_ncady")
+text = "Kepler 16"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="copernicus" type="TextureButton" parent="."]
+material = SubResource("ShaderMaterial_130n0")
+offset_left = 364.0
+offset_top = 385.0
+offset_right = 564.0
+offset_bottom = 585.0
+scale = Vector2(0.4, 0.4)
+texture_normal = ExtResource("2_y4nuk")
+
+[node name="copernicuslabel" type="Label" parent="copernicus"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -99.0
+offset_top = 9.5
+offset_right = -11.0
+offset_bottom = 32.5
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(2.25, 2.25)
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.498039, 0.498039, 0.498039, 1)
+theme_override_fonts/font = ExtResource("3_ncady")
+text = "Copernicus
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="pegasi" type="TextureButton" parent="."]
+material = SubResource("ShaderMaterial_eq0bf")
+offset_left = 545.0
+offset_top = 160.0
+offset_right = 745.0
+offset_bottom = 360.0
+scale = Vector2(0.4, 0.4)
+texture_normal = ExtResource("6_gkqux")
+
+[node name="pegasilabel" type="Label" parent="pegasi"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -55.0
+offset_right = -5.0
+offset_bottom = 23.0
+scale = Vector2(2.25, 2.25)
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.498039, 0.498039, 0.498039, 1)
+theme_override_fonts/font = ExtResource("3_ncady")
+text = "Pegasi"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="kepler186e" type="TextureButton" parent="."]
+offset_left = 655.0
+offset_top = 360.0
+offset_right = 855.0
+offset_bottom = 560.0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("7_pp3fr")
+
+[node name="kepler186label" type="Label" parent="kepler186e"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_right = -10.0
+offset_bottom = 23.0
+scale = Vector2(2.25, 2.25)
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.498039, 0.498039, 0.498039, 1)
+theme_override_fonts/font = ExtResource("3_ncady")
+text = "Kepler-186e"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="gj" type="TextureButton" parent="."]
+offset_left = 823.0
+offset_top = 140.0
+offset_right = 1023.0
+offset_bottom = 340.0
+scale = Vector2(0.6, 0.6)
+texture_normal = ExtResource("8_lrfbw")
+
+[node name="gjlabel" type="Label" parent="gj"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -65.0
+offset_top = 3.33333
+offset_right = -7.0
+offset_bottom = 26.3333
+scale = Vector2(2.3, 2.3)
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.498039, 0.498039, 0.498039, 1)
+theme_override_fonts/font = ExtResource("3_ncady")
+text = "GJ-1132"
+
+[node name="planetmove" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_d7bua")
+}
+
+[node name="availablelabel" type="Label" parent="."]
+visible = false
+offset_left = 431.0
+offset_top = 516.0
+offset_right = 681.0
+offset_bottom = 539.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.498039, 0.498039, 0.498039, 1)
+theme_override_fonts/font = ExtResource("3_ncady")
+text = "Not enough fuel! (Coming Soon!)"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="kepler16" to="." method="_on_kepler_16_pressed"]
+[connection signal="pressed" from="copernicus" to="." method="_on_copernicus_pressed"]
+[connection signal="pressed" from="pegasi" to="." method="_on_pegasi_pressed"]
+[connection signal="pressed" from="kepler186e" to="." method="_on_kepler_186e_pressed"]
+[connection signal="pressed" from="gj" to="." method="_on_gj_pressed"]

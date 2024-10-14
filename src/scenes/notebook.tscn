@@ -1,0 +1,135 @@
+[gd_scene load_steps=15 format=3 uid="uid://cr6egqunfo55e"]
+
+[ext_resource type="Texture2D" uid="uid://dvo0evkyju721" path="res://assets/backgrounds/bgnb.png" id="1_8hefr"]
+[ext_resource type="Script" path="res://scripts/notebook.gd" id="1_j4pp3"]
+[ext_resource type="Texture2D" uid="uid://cxerqgfsdkqc8" path="res://assets/ui/leftarrow.png" id="2_gxl7u"]
+[ext_resource type="Texture2D" uid="uid://enqysuh5it33" path="res://assets/notebook/PAGE1.png" id="3_2o3hy"]
+[ext_resource type="Texture2D" uid="uid://bcgamjdrcuuvl" path="res://assets/ui/rightarrow.png" id="3_5rawm"]
+[ext_resource type="Texture2D" uid="uid://bl8y3wwjd4vud" path="res://assets/notebook/COVER.png" id="4_mjf7c"]
+[ext_resource type="Texture2D" uid="uid://bp0rhb7dutq5h" path="res://assets/ui/stickynote.png" id="4_u10tx"]
+[ext_resource type="Texture2D" uid="uid://rbbdxytx5i0c" path="res://assets/backgrounds/cover.png" id="6_a8jx3"]
+[ext_resource type="Texture2D" uid="uid://bpbx5qo3ohfbu" path="res://assets/ui/xbutton.png" id="6_bbq03"]
+[ext_resource type="AudioStream" uid="uid://2o5dmwwn1ylr" path="res://sound/sfx/Page Flip Sound Effect.mp3" id="7_eel5j"]
+[ext_resource type="Texture2D" uid="uid://boqx44gp42c5c" path="res://assets/backgrounds/cover2.png" id="10_qrkwh"]
+
+[sub_resource type="Animation" id="Animation_0f13p"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("nbcover:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(611, 271)]
+}
+
+[sub_resource type="Animation" id="Animation_rx2ag"]
+resource_name = "notebook show"
+length = 0.75
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("nbcover:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.733333),
+"transitions": PackedFloat32Array(1, -2),
+"update": 0,
+"values": [Vector2(611, 900), Vector2(611, 271)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_q1hqn"]
+_data = {
+"RESET": SubResource("Animation_0f13p"),
+"notebook show": SubResource("Animation_rx2ag")
+}
+
+[node name="notebook" type="Node2D"]
+script = ExtResource("1_j4pp3")
+
+[node name="bg" type="Sprite2D" parent="."]
+position = Vector2(558, 323.5)
+scale = Vector2(5.35938, 4.52083)
+texture = ExtResource("1_8hefr")
+
+[node name="notebook" type="Sprite2D" parent="."]
+position = Vector2(575, 280)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("3_2o3hy")
+
+[node name="stickynote" type="Sprite2D" parent="notebook"]
+position = Vector2(850, -546.666)
+scale = Vector2(0.333333, 0.333333)
+texture = ExtResource("4_u10tx")
+
+[node name="leftarrow" type="TextureButton" parent="notebook"]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = -993.332
+offset_top = -713.333
+offset_right = 206.668
+offset_bottom = 486.667
+grow_vertical = 0
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("2_gxl7u")
+
+[node name="rightarrow" type="TextureButton" parent="notebook"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1243.33
+offset_top = -713.333
+offset_right = -43.333
+offset_bottom = 486.667
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("3_5rawm")
+
+[node name="close" type="TextureButton" parent="notebook"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -1056.67
+offset_top = -790.012
+offset_right = 143.333
+offset_bottom = 409.988
+grow_horizontal = 0
+scale = Vector2(0.15, 0.15)
+texture_normal = ExtResource("6_bbq03")
+
+[node name="pageturn" type="AudioStreamPlayer2D" parent="notebook"]
+stream = ExtResource("7_eel5j")
+
+[node name="cover2" type="Sprite2D" parent="."]
+position = Vector2(242.569, 370.465)
+rotation = 3.14159
+scale = Vector2(10.0748, 71.6423)
+texture = ExtResource("6_a8jx3")
+
+[node name="cover" type="Sprite2D" parent="."]
+position = Vector2(744, 505)
+scale = Vector2(19, 7.99999)
+texture = ExtResource("10_qrkwh")
+
+[node name="nbcover" type="Sprite2D" parent="."]
+position = Vector2(611, 271)
+scale = Vector2(0.32, 0.32)
+texture = ExtResource("4_mjf7c")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_q1hqn")
+}
+
+[connection signal="pressed" from="notebook/leftarrow" to="." method="_on_leftarrow_pressed"]
+[connection signal="pressed" from="notebook/rightarrow" to="." method="_on_rightarrow_pressed"]
+[connection signal="pressed" from="notebook/close" to="." method="_on_close_pressed"]

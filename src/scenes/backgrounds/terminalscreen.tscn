@@ -1,0 +1,109 @@
+[gd_scene load_steps=13 format=3 uid="uid://karcma3guhm6"]
+
+[ext_resource type="Script" path="res://scripts/terminalscreen.gd" id="1_v2y6a"]
+[ext_resource type="FontFile" uid="uid://dcybpwnq6n3em" path="res://assets/ui/font/Minecraft.ttf" id="2_5gx8i"]
+[ext_resource type="Texture2D" uid="uid://srkpffc5aviy" path="res://assets/backgrounds/starmap_sheet.png" id="2_djkus"]
+[ext_resource type="PackedScene" uid="uid://bn0ecnnd10uf1" path="res://scenes/buttons.tscn" id="3_qx2pp"]
+[ext_resource type="PackedScene" uid="uid://du4nuhhygrtk2" path="res://scenes/starbuttons.tscn" id="4_swu3j"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n2h6f"]
+atlas = ExtResource("2_djkus")
+region = Rect2(0, 0, 1539, 900)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qc5q1"]
+atlas = ExtResource("2_djkus")
+region = Rect2(1539, 0, 1539, 900)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wd6a8"]
+atlas = ExtResource("2_djkus")
+region = Rect2(3078, 0, 1539, 900)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mkjfp"]
+atlas = ExtResource("2_djkus")
+region = Rect2(4617, 0, 1539, 900)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yxtcl"]
+atlas = ExtResource("2_djkus")
+region = Rect2(6156, 0, 1539, 900)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5dbu0"]
+atlas = ExtResource("2_djkus")
+region = Rect2(7695, 0, 1539, 900)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3o16v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n2h6f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qc5q1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wd6a8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mkjfp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yxtcl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5dbu0")
+}],
+"loop": true,
+"name": &"map",
+"speed": 5.0
+}]
+
+[node name="starmap" type="Node2D"]
+position = Vector2(-2, -1)
+script = ExtResource("1_v2y6a")
+
+[node name="bg" type="AnimatedSprite2D" parent="."]
+position = Vector2(577.75, 325)
+scale = Vector2(0.748863, 0.72)
+sprite_frames = SubResource("SpriteFrames_3o16v")
+animation = &"map"
+
+[node name="StaticBody2D" parent="." instance=ExtResource("3_qx2pp")]
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("4_swu3j")]
+
+[node name="ougi" type="Label" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 550.0
+offset_top = 626.0
+offset_right = 592.0
+offset_bottom = 649.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.297823, 0.294816, 0.297823, 1)
+theme_override_fonts/font = ExtResource("2_5gx8i")
+text = "OUGI"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="interaction" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 373.0
+offset_top = 569.0
+offset_right = 681.0
+offset_bottom = 592.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.25, 1.25)
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_5gx8i")
+text = "Click on  a Star to travel to that system"
+horizontal_alignment = 1
+vertical_alignment = 1

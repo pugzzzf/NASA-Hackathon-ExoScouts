@@ -1,0 +1,202 @@
+[gd_scene load_steps=25 format=3 uid="uid://m4l1lay5a6d7"]
+
+[ext_resource type="Texture2D" uid="uid://dx2q3q0kfbf5w" path="res://assets/backgrounds/shipfinal.png" id="1_8uk2v"]
+[ext_resource type="Script" path="res://scripts/spaceship.gd" id="1_kh4r0"]
+[ext_resource type="PackedScene" uid="uid://faqi622btkik" path="res://scenes/bookstand.tscn" id="3_74bk8"]
+[ext_resource type="PackedScene" uid="uid://dfx3xpf6wb248" path="res://scenes/terminal.tscn" id="3_d4k48"]
+[ext_resource type="Texture2D" uid="uid://clp0llgrpq43s" path="res://assets/ui/notebookint.png" id="4_dr8qe"]
+[ext_resource type="PackedScene" uid="uid://bdsgkcd833fud" path="res://scenes/character.tscn" id="4_rl2nl"]
+[ext_resource type="PackedScene" uid="uid://c5jo88oy2jwve" path="res://scenes/wall.tscn" id="5_fd1p5"]
+[ext_resource type="Texture2D" uid="uid://cm4ec3limmq4s" path="res://assets/ui/terminalint.png" id="6_ihgil"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xob8v"]
+atlas = ExtResource("1_8uk2v")
+region = Rect2(0, 0, 1500, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bcdgd"]
+atlas = ExtResource("1_8uk2v")
+region = Rect2(1500, 0, 1500, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mrssj"]
+atlas = ExtResource("1_8uk2v")
+region = Rect2(3000, 0, 1500, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ohuni"]
+atlas = ExtResource("1_8uk2v")
+region = Rect2(4500, 0, 1500, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_voofd"]
+atlas = ExtResource("1_8uk2v")
+region = Rect2(6000, 0, 1500, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mp4q7"]
+atlas = ExtResource("1_8uk2v")
+region = Rect2(7500, 0, 1500, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ouv7"]
+atlas = ExtResource("1_8uk2v")
+region = Rect2(9000, 0, 1500, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m4slq"]
+atlas = ExtResource("1_8uk2v")
+region = Rect2(10500, 0, 1500, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lmp6h"]
+atlas = ExtResource("1_8uk2v")
+region = Rect2(12000, 0, 1500, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_txlne"]
+atlas = ExtResource("1_8uk2v")
+region = Rect2(13500, 0, 1500, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hy3bs"]
+atlas = ExtResource("1_8uk2v")
+region = Rect2(15000, 0, 1500, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ljcl1"]
+atlas = ExtResource("1_8uk2v")
+region = Rect2(16500, 0, 1500, 800)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sj40p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xob8v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bcdgd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mrssj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ohuni")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_voofd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mp4q7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ouv7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m4slq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lmp6h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_txlne")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hy3bs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ljcl1")
+}],
+"loop": true,
+"name": &"ship",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_7o54q"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bookstand/notebookint:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -115)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("terminal/terminalint:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -150)]
+}
+
+[sub_resource type="Animation" id="Animation_xcur2"]
+resource_name = "idle"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bookstand/notebookint:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 0.5),
+"update": 1,
+"values": [Vector2(0, -115), Vector2(0, -125)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("terminal/terminalint:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 0.5),
+"update": 1,
+"values": [Vector2(0, -150), Vector2(-10, -150)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kylua"]
+_data = {
+"RESET": SubResource("Animation_7o54q"),
+"idle": SubResource("Animation_xcur2")
+}
+
+[node name="spaceship" type="Node2D"]
+script = ExtResource("1_kh4r0")
+
+[node name="bg" type="AnimatedSprite2D" parent="."]
+position = Vector2(572, 322)
+scale = Vector2(0.776401, 0.818125)
+sprite_frames = SubResource("SpriteFrames_sj40p")
+animation = &"ship"
+speed_scale = 1.5
+
+[node name="bookstand" parent="." instance=ExtResource("3_74bk8")]
+position = Vector2(209, 483)
+
+[node name="notebookint" type="Sprite2D" parent="bookstand"]
+position = Vector2(0, -115)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("4_dr8qe")
+
+[node name="terminal" parent="." instance=ExtResource("3_d4k48")]
+position = Vector2(999, 527)
+
+[node name="terminalint" type="Sprite2D" parent="terminal"]
+position = Vector2(0, -150)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("6_ihgil")
+
+[node name="Character" parent="." instance=ExtResource("4_rl2nl")]
+position = Vector2(430, 508)
+
+[node name="wall" parent="." instance=ExtResource("5_fd1p5")]
+visible = false
+position = Vector2(490, 430)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_kylua")
+}

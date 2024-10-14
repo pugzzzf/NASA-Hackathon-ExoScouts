@@ -1,0 +1,62 @@
+[gd_scene load_steps=7 format=3 uid="uid://bdsgkcd833fud"]
+
+[ext_resource type="Script" path="res://character.gd" id="1_1v04l"]
+[ext_resource type="Texture2D" uid="uid://b5cc2biko0jgv" path="res://assets/placeholder.png" id="2_ah1pw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qoge5"]
+radius = 89.0505
+
+[sub_resource type="Animation" id="Animation_21vqi"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.0872665]
+}
+
+[sub_resource type="Animation" id="Animation_t7chn"]
+resource_name = "wlak"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [-0.0872665, 0.0872665]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kimwj"]
+_data = {
+"RESET": SubResource("Animation_21vqi"),
+"wlak": SubResource("Animation_t7chn")
+}
+
+[node name="Character" type="CharacterBody2D" groups=["player"]]
+collision_layer = 2
+script = ExtResource("1_1v04l")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = -0.0872665
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_ah1pw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 22)
+shape = SubResource("CircleShape2D_qoge5")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_kimwj")
+}

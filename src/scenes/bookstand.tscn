@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://faqi622btkik"]
+
+[ext_resource type="Script" path="res://scripts/bookstand.gd" id="1_17e82"]
+[ext_resource type="PackedScene" uid="uid://f43256qbmjed" path="res://interaction/interactionarea/interaction_area.tscn" id="2_5css8"]
+[ext_resource type="Texture2D" uid="uid://cg1ifrqvdeqxo" path="res://assets/backgrounds/bookcase.png" id="2_larse"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lv7jo"]
+size = Vector2(249, 429)
+
+[node name="bookstand" type="StaticBody2D"]
+script = ExtResource("1_17e82")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("2_larse")
+
+[node name="InteractionArea" parent="." instance=ExtResource("2_5css8")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+position = Vector2(-0.5, -22.5)
+shape = SubResource("RectangleShape2D_lv7jo")

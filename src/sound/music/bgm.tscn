@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bv002bie35d4t"]
+
+[ext_resource type="AudioStream" uid="uid://7ubt11axefxc" path="res://sound/music/Future Trip - Tutis.mp3" id="1_yjsb3"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_yjsb3")
+volume_db = -18.0
+autoplay = true
+parameters/looping = false

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://2o5dmwwn1ylr"
+path="res://.godot/imported/Page Flip Sound Effect.mp3-f834fc911dc271813b4102035f9f4d48.mp3str"
+
+[deps]
+
+source_file="res://sound/sfx/Page Flip Sound Effect.mp3"
+dest_files=["res://.godot/imported/Page Flip Sound Effect.mp3-f834fc911dc271813b4102035f9f4d48.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://njqqnqrk0c48"]
+
+[ext_resource type="Script" path="res://scripts/mainmenu.gd" id="1_ursgi"]
+[ext_resource type="Texture2D" uid="uid://ds13mhhp8o2ob" path="res://assets/ui/menu.png" id="2_0cega"]
+[ext_resource type="FontFile" uid="uid://dcybpwnq6n3em" path="res://assets/ui/font/Minecraft.ttf" id="3_2apjq"]
+
+[node name="mainmenu" type="Node2D"]
+script = ExtResource("1_ursgi")
+
+[node name="menusprite" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(0.6, 0.629126)
+texture = ExtResource("2_0cega")
+
+[node name="interact" type="Label" parent="menusprite"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -1269.0
+offset_top = -653.392
+offset_right = -1021.0
+offset_bottom = -637.392
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(2.5, 2.5)
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_2apjq")
+text = "Press 'Space' to enter the game"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="aboutus" type="TextureButton" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
