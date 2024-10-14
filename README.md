@@ -4,9 +4,10 @@
 
 Design Document
 
-2024 NASA Space Apps Hackathon, with <3 by team Exo Scouts
+2024 NASA Space Apps Hackathon, with <3 by [team Exo Scouts](https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/exoscouts/)
 
 [**Introduction**](#Introduction)
+[**Meet the Team**](#meet-the-team)
 
 - [Game Summary](#game-summary-pitch)    
 
@@ -184,8 +185,8 @@ In essence:
 - Use choice of planet variable
 - Render star, star name, and scan new planets prompt
 - On the Space key, press, start [Planet Discover scene].
-![](https://cdn.discordapp.com/attachments/265654195816890377/1294758097818095729/image.png?ex=670c2cf1&is=670adb71&hm=a42dd8fdceb8370ca9034fa61d69b69158921585f2f54576526fe21b41abc9a4&)
-
+- 
+![image](https://github.com/user-attachments/assets/86c76428-be65-4c99-b58e-f146d7346c4b)
 **3rd Scene, Planet Discover Scene**
 
 The terminal scene will change to the star and an oscillating dot (the planet), where the player will have to press the space bar when the dot is completely in the center of the star.
@@ -203,7 +204,6 @@ In essence:
 - Mark star system as complete on the terminal.
 
 ![image](https://github.com/user-attachments/assets/dc9ee048-4413-4251-8e83-832cba2c9852)
-
 ## **Planet Book Loop**
 
 Planet Book, on interact.
@@ -220,6 +220,8 @@ In essence:
 - The planets’ information will be a drawing of the planet and general characteristics.
 ![BITACORA 55 CANCRI D](https://github.com/user-attachments/assets/4d8d8d40-fa27-460f-945e-5bec9621ac3f)
 
+## 	Meet the Team
+![image](https://github.com/user-attachments/assets/a6ebeba9-fce9-4300-8100-3af17029d614)
 ## **Links, References and Tools**
 
 ### **Journal Articles**
@@ -311,3 +313,4 @@ https://eyes.nasa.gov/apps/exo/\#/system/GJ\_1132
 Exoplanets \- NASA Science. (2023, June 7). Nasa.gov.
 
 https://science.nasa.gov/exoplanets/
+
