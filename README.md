@@ -1,5 +1,5 @@
 # Space Monkey
-
+## [Project Demo (Web Application)](https://pugzzzf.itch.io/space-monkey)
 ![image](https://github.com/pugzzzf/NASA-Hackathon-ExoScouts/blob/master/src/assets/ui/menu.png?raw=true)
 
 Design Document
